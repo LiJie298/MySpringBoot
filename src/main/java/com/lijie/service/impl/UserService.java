@@ -2,6 +2,7 @@ package com.lijie.service.impl;
 
 import com.lijie.dao.UserInfo;
 import com.lijie.service.IUserService;
+import com.lijie.util.Log;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,16 +15,16 @@ import org.springframework.stereotype.Service;
 public class UserService implements IUserService {
     @Override
     public void regAccount(UserInfo userInfo) {
-        System.out.println("注册用户成功");
+        Log.info("注册用户成功");
     }
 
     @Override
     public void updateAccount(UserInfo userInfo) {
-        System.out.println("更新用户成功");
+        Log.info("更新用户成功");
     }
 
     @Override
     public void delAccount(int userId) {
-        System.out.println("删除用户成功");
+        Log.info("删除用户成功,userId:"+userId);
     }
 }

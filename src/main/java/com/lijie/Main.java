@@ -1,3 +1,5 @@
+package com.lijie;
+
 import com.lijie.Config;
 import com.lijie.service.IUserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

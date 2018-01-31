@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author lijie7
@@ -41,6 +42,7 @@ public class UserController {
      *
      * @param userId
      */
+    @ResponseBody
     @RequestMapping(value = "delAccount",method = RequestMethod.GET)
     private void delAccount(@RequestParam int userId){
         service.delAccount(userId);
